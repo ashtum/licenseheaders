@@ -84,9 +84,9 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": None,
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": "##\n",
-        "headerEndLine": "##\n",
-        "headerLinePrefix": "## ",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
+        "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
     "perl": {
@@ -96,9 +96,9 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": None,
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": "##\n",
-        "headerEndLine": "##\n",
-        "headerLinePrefix": "## ",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
+        "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
     "python": {
@@ -108,8 +108,8 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": None,
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": None,
-        "headerEndLine": "\n",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
         "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
@@ -134,7 +134,7 @@ TYPE_SETTINGS = {
         "lineCommentEndPattern": None,
         "headerStartLine": "<!--\n",
         "headerEndLine": "  -->\n",
-        "headerLinePrefix": "-- ",
+        "headerLinePrefix": "",
         "headerLineSuffix": None
     },
     "sql": {
@@ -181,9 +181,9 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": re.compile(r'^=end'),
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": "##\n",
-        "headerEndLine": "##\n",
-        "headerLinePrefix": "## ",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
+        "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
     "vb": {
@@ -219,7 +219,7 @@ TYPE_SETTINGS = {
         "lineCommentEndPattern": None,
         "headerStartLine": "<!--\n",
         "headerEndLine": "-->\n",
-        "headerLinePrefix": "-- ",
+        "headerLinePrefix": "",
         "headerLineSuffix": None
     },
     "css": {
@@ -242,9 +242,9 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": None,
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": "##\n",
-        "headerEndLine": "##\n",
-        "headerLinePrefix": "## ",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
+        "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
     "yaml": {
@@ -254,9 +254,9 @@ TYPE_SETTINGS = {
         "blockCommentEndPattern": None,
         "lineCommentStartPattern": re.compile(r'^\s*#'),
         "lineCommentEndPattern": None,
-        "headerStartLine": "##\n",
-        "headerEndLine": "##\n",
-        "headerLinePrefix": "## ",
+        "headerStartLine": "#\n",
+        "headerEndLine": "#\n",
+        "headerLinePrefix": "# ",
         "headerLineSuffix": None
     },
     "zig": {
@@ -269,6 +269,18 @@ TYPE_SETTINGS = {
         "headerStartLine": "//!\n",
         "headerEndLine": "//!\n",
         "headerLinePrefix": "//! ",
+        "headerLineSuffix": None
+    },
+    "adoc": {
+        "extensions": [".adoc"],
+        "keepFirst": None,
+        "blockCommentStartPattern": None,
+        "blockCommentEndPattern": None,
+        "lineCommentStartPattern": re.compile(r'^\s*//'),
+        "lineCommentEndPattern": None,
+        "headerStartLine": "////\n",
+        "headerEndLine": "////\n",
+        "headerLinePrefix": "",
         "headerLineSuffix": None
     },
     "proto": {
@@ -307,18 +319,6 @@ TYPE_SETTINGS = {
         "headerLinePrefix": ":: ",
         "headerLineSuffix": None
     },
-    "ocaml": {
-        "extensions": [".ml", ".mli", ".mlg", ".v"],
-        "keepFirst": None,
-        "blockCommentStartPattern": re.compile(r'^\s*\(\*'),
-        "blockCommentEndPattern": re.compile(r'\*\)\s*$'),
-        "lineCommentStartPattern": None,
-        "lineCommentEndPattern": None,
-        "headerStartLine": "(*\n",
-        "headerEndLine": " *)\n",
-        "headerLinePrefix": " * ",
-        "headerLineSuffix": None
-    }
 }
 
 yearsPattern = re.compile(
